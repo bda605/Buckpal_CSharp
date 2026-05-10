@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buckpal_CSharp", "Buckpal_CSharp\Buckpal_CSharp.csproj", "{BDDDEFF6-708A-443B-7A85-468B41D6C547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buckpal_CSharp_Test", "Buckpal_CSharp_Test\Buckpal_CSharp_Test.csproj", "{116D8622-380E-77B3-1449-D419984488FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDDDEFF6-708A-443B-7A85-468B41D6C547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDDDEFF6-708A-443B-7A85-468B41D6C547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDDDEFF6-708A-443B-7A85-468B41D6C547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDDDEFF6-708A-443B-7A85-468B41D6C547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{116D8622-380E-77B3-1449-D419984488FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{116D8622-380E-77B3-1449-D419984488FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{116D8622-380E-77B3-1449-D419984488FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{116D8622-380E-77B3-1449-D419984488FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67B85701-0530-426C-8B42-74872C65E246}
+	EndGlobalSection
+EndGlobal
