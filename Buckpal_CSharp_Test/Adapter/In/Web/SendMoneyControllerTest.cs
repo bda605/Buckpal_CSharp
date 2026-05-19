@@ -45,8 +45,9 @@ public class SendMoneyControllerTest : IClassFixture<WebApplicationFactory<Progr
                         d => d.ServiceType == typeof(DbContextOptions<BuckpalDbContext>));
                     if (dbDescriptor is not null)
                         services.Remove(dbDescriptor);
+                    var dbName = Guid.NewGuid().ToString();
                     services.AddDbContext<BuckpalDbContext>(options =>
-                        options.UseInMemoryDatabase(Guid.NewGuid().ToString()));
+                        options.UseInMemoryDatabase(dbName));
 
                     // 移除 DI 容器中的正式 ISendMoneyUseCase 實作
                     var descriptor = services.SingleOrDefault(

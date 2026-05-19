@@ -13,6 +13,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BuckpalDbContext>(options =>
     options.UseInMemoryDatabase("BuckpalDb"));
 
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
+builder.Services.AddScoped<AccountMapper>();
 builder.Services.AddScoped<ISendMoneyUseCase, SendMoneyService>();
 builder.Services.AddScoped<ILoadAccountPort, AccountPersistenceAdapter>();
 builder.Services.AddScoped<IUpdateAccountStatePort, AccountPersistenceAdapter>();
